@@ -12,10 +12,15 @@ show_above_site_header:
   description: 'Display the banner in the above site header connector.'
 
 show_below_site_header:
-  default: true
+  default: false
   type: bool
   description: 'Display the banner in the below site header connector.'
 
+show_above_layouts_main_content:
+  default: true
+  type: bool
+  description: 'Display the banner above layouts main content connector (to support Layouts plugin).'
+  
 remove_tag_hyphen:
   default: false
   type: bool
