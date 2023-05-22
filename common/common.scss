@@ -4,10 +4,9 @@
   width: 100%;
   justify-content: center;
   background: var(--primary-very-low);
-  min-height: 10em; // prevents hop when tag name loads
 
   .tag-title-contents {
-    max-width: 700px;
+    max-width: 46em;
     padding: 3.5em 3em 3em;
 
     @media screen and (max-width: 450px) {
@@ -46,5 +45,37 @@
     p {
       margin-top: 0;
     }
+  }
+}
+
+// category banner integration
+
+.tag-banner__text-only {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-down-4);
+  font-weight: normal;
+
+  .d-icon {
+    font-size: var(--font-down-3);
+    margin-right: 0.33em;
+  }
+
+  .discourse-tag,
+  .discourse-tag.bullet,
+  .discourse-tag.box,
+  .discourse-tag.simple {
+    margin: 0;
+    color: currentColor;
+    &:before {
+      background: currentColor;
+    }
+  }
+
+  .discourse-tag.box {
+    background: transparent;
+    font-size: var(--font-down-1);
+    box-shadow: 0 0 0 1px currentColor;
   }
 }
